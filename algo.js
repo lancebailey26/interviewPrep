@@ -167,4 +167,4 @@ function missingDigit(str) {
     }
     return +resultArr[xPos];       
   }
-console.log(missingDigit("20 / x0 = 2"));
+
