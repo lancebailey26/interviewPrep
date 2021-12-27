@@ -168,3 +168,4 @@ function missingDigit(str) {
     return +resultArr[xPos];       
   }
 
+
