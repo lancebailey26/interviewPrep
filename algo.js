@@ -93,5 +93,3 @@ function chunk(array, size){
     }
     return chunked
 }
-
-console.log(chunk([1,2,3,4,5,6],2))
