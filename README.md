@@ -1,3 +1,13 @@
-## Interview Prep
+# Interview Prep
 
-# In this repo I'll be posting some algorithms and other things I find useful to share with my pals.
+## In this repo I'll be posting some algorithms and other things I find useful to share with my pals.
+
+## Algorithms:
+* Array Chunk
+* Fibonacci
+* FizzBuzz
+* Max Characters
+* Missing Digit
+* Palindrome
+* Reverse Integer
+* Reverse String
