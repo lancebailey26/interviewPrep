@@ -1,3 +1,5 @@
+//Fibonacci Sequence
+// Print out the n-th entry in the fibonacci series.
 function fib(n) {
   //first 2 are 1 & 2
   if (n < 2) {
@@ -7,11 +9,16 @@ function fib(n) {
   return fib(n - 1) + fib(n - 2);
 }
 
+//Reverse String
+// EXAMPLE: reverse('Hello!') === '!olleH'
 function reverse(str) {
   //split string to array, reverse array, join array to string
   return str.split("").reverse().join("");
 }
 
+//Palindrome
+//EXAMPLE: palindrome('hannah') === true
+//         palindrome('racecar') === true
 function palindrome(str) {
   //split string to array, reverse array, join array to string
   var reversed = str.split("").reverse().join("");
@@ -22,12 +29,24 @@ function palindrome(str) {
     return false;
   }
 }
+
+//Reverse Integer
+//Return the reverse order of numbers while maintaining an Int
+//Note: Maintain rational numbers (ie: -1500 would return -51, not -0051)
+//EXAMPLE: reverseInt(204) === 402
+//         reverseInt(-15) === -51
+//         reverseInt(1500)=== 15
 function reverseInt(n) {
   //turn int into string, split to array, reverse,  join into new string.
   const reversed = n.toString().split("").reverse().join("");
   //parse int will handle 0s at beginning of string, and math.sign assigns positive or negative.
   return parseInt(reversed) * Math.sign(n);
 }
+
+//Max Character
+//Return the most commonly occouring character in a string.
+//EXAMPLE: maxChar('hello') === 'l'
+//         maxChar('lance 11112) === '1'
 
 function maxChar(str) {
   // create object for map
@@ -53,8 +72,13 @@ function maxChar(str) {
       totalMax = chars[char];
     }
   }
+  //i made the output look fancy, but the result is right.
   return "the character " + character + " appears " + totalMax + " times.";
 }
+
+//FizzBuzz
+//Everyones Favorite: create an array from 0-n, for each index, if it is divisible by 3, output Fizz, if divisible by 5, output Buzz, if divisible by 3 & 5, output FizzBuzz
+//EXAMPLE: fizzBuzz(5) === '1,2,fizz,4,buzz'
 function fizzBuzz(n) {
   //create array from 0-n
   const arr = Array.from({ length: n + 1 }, (x, i) => i);
@@ -76,6 +100,10 @@ function fizzBuzz(n) {
   }
 }
 
+
+//Array Chunk
+//Take an array, and chunk it into smaller size arrays.
+//EXAMPLE: chunk([1, 2, 3, 4], 2) === [[ 1, 2], [3, 4]]
 function chunk(array, size) {
   //returner array
   const chunked = [];
@@ -94,6 +122,10 @@ function chunk(array, size) {
   return chunked;
 }
 
+//Missing Digit
+//Solve for x to complete the equation.
+//EXAMPLE: missingDigit('20 + x0 = 30') === 1
+//         missingDigit('x0 - 50 = 10') === 6
 function missingDigit(str) { 
     //split string 
     var split = str.split(' ')
