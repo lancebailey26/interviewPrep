@@ -5,6 +5,7 @@
 ## Algorithms:
 * Anagrams
 * Array Chunk
+* Capitalize
 * Fibonacci
 * FizzBuzz
 * Max Characters
