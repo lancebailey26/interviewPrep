@@ -9,14 +9,17 @@
 //         "###"
 
 function steps(n){
-  
+  //loop for rows
   for(let r = 0; r < n; r++){
+      //empty string
       let stair = ''
-
+    //column loop
       for (let c = 0; c<n; c++){
+          //if column <= row, add #
           if(c <= r){
               stair += '#'
           }else{
+              //otherwise add a space 
               stair += ' '
           }
       }
