@@ -11,6 +11,8 @@
 * Max Characters
 * Missing Digit
 * Palindrome
+* Pyramids
 * Reverse Integer
 * Reverse String
 * Steps
+* Vowels
