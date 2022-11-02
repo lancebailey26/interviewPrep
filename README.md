@@ -9,6 +9,7 @@
 * Fibonacci
 * FizzBuzz
 * Max Characters
+* Median of Two Sorted Arrays
 * Missing Digit
 * Palindrome
 * Pyramids
